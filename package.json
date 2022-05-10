@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run test",
-    "start": "nodemon server.js",
+    "start": "nodemon server_cluster.js",
     "dev": "nodemon server.js"
   },
   "repository": {
@@ -30,6 +30,7 @@
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
     "nodemailer": "^6.7.3",
+    "nodemon": "^2.0.16",
     "path": "^0.12.7",
     "update-json-file": "^1.1.1",
     "validatorjs": "^3.22.1"
@@ -39,8 +40,5 @@
   "bugs": {
     "url": "https://github.com/naveengangadharappa/Books_Exchange/issues"
   },
-  "homepage": "https://github.com/naveengangadharappa/Books_Exchange#readme",
-  "devDependencies": {
-    "nodemon": "^2.0.15"
-  }
+  "homepage": "https://github.com/naveengangadharappa/Books_Exchange#readme"
 }
