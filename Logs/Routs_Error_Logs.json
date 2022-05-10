@@ -1,0 +1,64 @@
+{
+	"log": [
+		{
+			"DateTime": "Date: 2022-2-27 Time:  2 : 26 : 42",
+			"UserId": "latest",
+			"Errormsg": "TypeError: req.split is not a function"
+		},
+		{
+			"DateTime": "Date: 2022-2-29 Time:  18 : 22 : 15",
+			"UserId": "latest",
+			"Errormsg": "TypeError: req.split is not a function"
+		},
+		{
+			"DateTime": "Date: 2022-2-30 Time:  22 : 56 : 45",
+			"UserId": "latest",
+			"Errormsg": "TypeError: req.split is not a function"
+		},
+		{
+			"DateTime": "Date: 2022-3-5 Time:  1 : 31 : 7",
+			"UserId": "latest",
+			"Errormsg": "ReferenceError: path is not defined"
+		},
+		{
+			"DateTime": "Date: 2022-3-5 Time:  1 : 33 : 10",
+			"UserId": "latest",
+			"Errormsg": "ReferenceError: path is not defined"
+		},
+		{
+			"DateTime": "Date: 2022-3-9 Time:  15 : 58 : 53",
+			"UserId": "latest",
+			"Errormsg": "TypeError: req.session is not a function"
+		},
+		{
+			"DateTime": "Date: 2022-4-4 Time:  22 : 25 : 34",
+			"UserId": "latest",
+			"Errormsg": "TypeError: Cannot read properties of undefined (reading 'status')"
+		},
+		{
+			"DateTime": "Date: 2022-4-4 Time:  23 : 10 : 17",
+			"UserId": "latest",
+			"Errormsg": "TypeError: Cannot read properties of undefined (reading 'status')"
+		},
+		{
+			"DateTime": "Date: 2022-4-4 Time:  23 : 12 : 59",
+			"UserId": "latest",
+			"Errormsg": "TypeError: Cannot read properties of undefined (reading 'status')"
+		},
+		{
+			"DateTime": "Date: 2022-4-4 Time:  23 : 15 : 44",
+			"UserId": "latest",
+			"Errormsg": "TypeError: Cannot read properties of undefined (reading 'status')"
+		},
+		{
+			"DateTime": "Date: 2022-4-4 Time:  23 : 17 : 17",
+			"UserId": "latest",
+			"Errormsg": "TypeError: Cannot read properties of undefined (reading 'status')"
+		},
+		{
+			"DateTime": "Date: 2022-4-4 Time:  23 : 36 : 5",
+			"UserId": "latest",
+			"Errormsg": "TypeError: Cannot read properties of undefined (reading 'status')"
+		}
+	]
+}

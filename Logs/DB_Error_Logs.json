@@ -1,0 +1,119 @@
+{
+	"log": [
+		{
+			"DateTime": "Date: 2021-3-27 Time:  20 : 3 : 23",
+			"UserId": "myId",
+			"Errormsg": "ReferenceError: id is not defined"
+		},
+		{
+			"DateTime": "Date: 2021-3-28 Time:  2 : 10 : 34",
+			"UserId": "myId",
+			"Errormsg": "TypeError: available_realtor[0] is not iterable"
+		},
+		{
+			"DateTime": "Date: 2022-3-5 Time:  2 : 21 : 23",
+			"UserId": "myId",
+			"Errormsg": "Error: Access denied for user ''@'localhost' (using password: YES)"
+		},
+		{
+			"DateTime": "Date: 2022-3-9 Time:  15 : 43 : 17",
+			"UserId": "myId",
+			"Errormsg": "Error: Unknown column 'stu_password' in 'field list'"
+		},
+		{
+			"DateTime": "Date: 2022-3-9 Time:  15 : 43 : 35",
+			"UserId": "myId",
+			"Errormsg": "Error: Unknown column 'stu_password' in 'field list'"
+		},
+		{
+			"DateTime": "Date: 2022-3-9 Time:  15 : 52 : 1",
+			"UserId": "myId",
+			"Errormsg": "Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',Ip_Address='192.193.98.29',modified_time='2022-04-09 15:52:01' where stu_id='1B' at line 1"
+		},
+		{
+			"DateTime": "Date: 2022-3-17 Time:  13 : 49 : 41",
+			"UserId": "latest",
+			"Errormsg": "TypeError: Cannot read properties of undefined (reading 'data')"
+		},
+		{
+			"DateTime": "Date: 2022-3-17 Time:  13 : 52 : 58",
+			"UserId": "latest",
+			"Errormsg": "TypeError: Cannot read properties of undefined (reading 'data')"
+		},
+		{
+			"DateTime": "Date: 2022-3-17 Time:  13 : 55 : 25",
+			"UserId": "latest",
+			"Errormsg": "ReferenceError: toemail is not defined"
+		},
+		{
+			"DateTime": "Date: 2022-3-17 Time:  13 : 58 : 41",
+			"UserId": "latest",
+			"Errormsg": "ReferenceError: toemail is not defined"
+		},
+		{
+			"DateTime": "Date: 2022-3-17 Time:  13 : 59 : 1",
+			"UserId": "latest",
+			"Errormsg": "ReferenceError: toemail is not defined"
+		},
+		{
+			"DateTime": "Date: 2022-3-17 Time:  14 : 3 : 2",
+			"UserId": "latest",
+			"Errormsg": "ReferenceError: transporter is not defined"
+		},
+		{
+			"DateTime": "Date: 2022-3-17 Time:  14 : 7 : 30",
+			"UserId": "myId",
+			"Errormsg": "Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from,to,stu_id) values(1650530864929,'email','gnaveenkumar18.ng@gmail.com',NULL,' at line 1"
+		},
+		{
+			"DateTime": "Date: 2022-3-17 Time:  14 : 10 : 58",
+			"UserId": "myId",
+			"Errormsg": "Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from,to,stu_id) values(1651318790567,'email','booksdealingsystem@gmail.com','gna' at line 1"
+		},
+		{
+			"DateTime": "Date: 2022-3-17 Time:  14 : 12 : 33",
+			"UserId": "myId",
+			"Errormsg": "Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from,to,stu_id) values(1650630944091,'email','booksdealingsystem@gmail.com','gna' at line 1"
+		},
+		{
+			"DateTime": "Date: 2022-3-17 Time:  14 : 14 : 53",
+			"UserId": "myId",
+			"Errormsg": "Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from,to,stu_id) values(1650192630027,'email','booksdealingsystem@gmail.com','gna' at line 1"
+		},
+		{
+			"DateTime": "Date: 2022-3-17 Time:  14 : 18 : 10",
+			"UserId": "myId",
+			"Errormsg": "Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from,to,stu_id) values('1650325995212','email','booksdealingsystem@gmail.com','g' at line 1"
+		},
+		{
+			"DateTime": "Date: 2022-3-17 Time:  14 : 31 : 32",
+			"UserId": "myId",
+			"Errormsg": "Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''type','from','to',stu_id) values('1651062495424','email','booksdealingsystem@gm' at line 1"
+		},
+		{
+			"DateTime": "Date: 2022-3-17 Time:  14 : 38 : 48",
+			"UserId": "myId",
+			"Errormsg": "Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''id','type','from','to','stu_id') values ('1650417942740','email','booksdealings' at line 1"
+		},
+		{
+			"DateTime": "Date: 2022-3-17 Time:  14 : 39 : 22",
+			"UserId": "myId",
+			"Errormsg": "Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from,to,stu_id) values ('1650825657230','email','booksdealingsystem@gmail.com','' at line 1"
+		},
+		{
+			"DateTime": "Date: 2022-3-17 Time:  14 : 52 : 30",
+			"UserId": "latest",
+			"Errormsg": "TypeError: Cannot read properties of undefined (reading 's_email')"
+		},
+		{
+			"DateTime": "Date: 2022-4-4 Time:  23 : 19 : 48",
+			"UserId": "myId",
+			"Errormsg": "Error: Table 'naveenbooks.books' doesn't exist"
+		},
+		{
+			"DateTime": "Date: 2022-4-4 Time:  23 : 48 : 31",
+			"UserId": "myId",
+			"Errormsg": "Error: Unknown column 'b_collage' in 'where clause'"
+		}
+	]
+}

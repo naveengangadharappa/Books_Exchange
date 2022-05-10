@@ -1,0 +1,34 @@
+{
+	"log": [
+		{
+			"DateTime": "Date: 2022-4-4 Time:  22 : 25 : 34",
+			"UserId": "latest",
+			"Errormsg": "ReferenceError: req is not defined"
+		},
+		{
+			"DateTime": "Date: 2022-4-4 Time:  23 : 10 : 17",
+			"UserId": "latest",
+			"Errormsg": "ReferenceError: req is not defined"
+		},
+		{
+			"DateTime": "Date: 2022-4-4 Time:  23 : 12 : 59",
+			"UserId": "latest",
+			"Errormsg": "TypeError: val.trim is not a function"
+		},
+		{
+			"DateTime": "Date: 2022-4-4 Time:  23 : 15 : 44",
+			"UserId": "latest",
+			"Errormsg": "TypeError: val.trim is not a function"
+		},
+		{
+			"DateTime": "Date: 2022-4-4 Time:  23 : 17 : 17",
+			"UserId": "latest",
+			"Errormsg": "TypeError: val.trim is not a function"
+		},
+		{
+			"DateTime": "Date: 2022-4-4 Time:  23 : 36 : 5",
+			"UserId": "latest",
+			"Errormsg": "TypeError: Cannot read properties of undefined (reading 'json')"
+		}
+	]
+}
