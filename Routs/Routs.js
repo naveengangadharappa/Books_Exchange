@@ -467,8 +467,9 @@ router.post('/Seller_Filter', async (req, res) => {
 //     }
 // }
 
-router.use(validationschema.handle_ValidationError)
+//router.use(validationschema.handle_ValidationError)
 
+router.use(helpers.handle_ValidationError)
 
 
 // router.post('/seed_data', async (req, res) => {

@@ -247,19 +247,19 @@ const validatedata = async (body, option,res) => {
                 switch(body.choice){
                     case 'login':
                         validation = new Validator(body, Auth.login, errmsg.Auth.login)
-                        validation_result = validation.fails() ? { status: false, message: 'List_houses Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };        
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };        
                         break;
                     case 'register': 
                         validation = new Validator(body, Auth.register, errmsg.Auth.register)
-                        validation_result = validation.fails() ? { status: false, message: 'List_houses Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     case 'passwordreset': 
                         validation = new Validator(body, Auth.passwordreset, errmsg.Auth.passwordreset)
-                        validation_result = validation.fails() ? { status: false, message: 'List_houses Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     case 'logout':
                         validation = new Validator(body, Auth.logout, errmsg.Auth.logout)
-                        validation_result = validation.fails() ? { status: false, message: 'List_houses Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     default : validation_result = {status:false,message:"Invalid choice passed,please pass valid choice"};
                     break;
@@ -269,19 +269,19 @@ const validatedata = async (body, option,res) => {
                 switch(body.choice){
                     case 'sms':
                         validation = new Validator(body, Notification.sms, errmsg.Notification.sms)
-                        validation_result = validation.fails() ? { status: false, message: 'Get_Time_Slots Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     case 'email': 
                         validation = new Validator(body, Notification.email, errmsg.Notification.email)
-                        validation_result = validation.fails() ? { status: false, message: 'Get_Time_Slots Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     case 'firebase': 
                         validation = new Validator(body, Notification.firebase, errmsg.Notification.firebase)
-                        validation_result = validation.fails() ? { status: false, message: 'List_houses Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     case 'desktop':
                         validation = new Validator(body, Notification.desktop, errmsg.Notification.desktop)
-                        validation_result = validation.fails() ? { status: false, message: 'List_houses Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     default : validation_result = {status:false,message:"Invalid choice passed,please pass valid choice"};
                     break;
@@ -291,19 +291,19 @@ const validatedata = async (body, option,res) => {
                 switch(body.choice){
                     case 'add':
                         validation = new Validator(body, Book_Operations.add, errmsg.Book_Operations.add)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     case 'delete':
                         validation = new Validator(body, Book_Operations.delete, errmsg.Book_Operations.delete)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     case 'update':
                         validation = new Validator(body, Book_Operations.update, errmsg.Book_Operations.update)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     case 'fetch':
                         validation = new Validator(body, Book_Operations.fetch, errmsg.Book_Operations.fetch)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     default : validation_result ={status:false,message:"Invalid choice passed,please pass valid choice "};
                     break;
@@ -313,19 +313,19 @@ const validatedata = async (body, option,res) => {
                 switch(body.choice){
                     case 'add':
                         validation = new Validator(body, Order_Operations.add, errmsg.Order_Operations.add)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     case 'delete':
                         validation = new Validator(body, Order_Operations.delete, errmsg.Order_Operations.delete)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     case 'update':
                         validation = new Validator(body, Order_Operations.update, errmsg.Order_Operations.update)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     case 'fetch':
                         validation = new Validator(body, Order_Operations.fetch, errmsg.Order_Operations.fetch)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     default : validation_result ={status:false,message:"Invalid choice passed,please pass valid choice "};
                     break;
@@ -337,35 +337,35 @@ const validatedata = async (body, option,res) => {
                         break;
                     case 'title':
                         validation = new Validator(body, book_filter.title, errmsg.book_filter.title)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     case 'id':
                         validation = new Validator(body, book_filter.id, errmsg.book_filter.id)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                     break;
                     case 'sector':
                         validation = new Validator(body, book_filter.book_sector, errmsg.book_filter.sector)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     case 'branch':
                         validation = new Validator(body, book_filter.book_branch, errmsg.book_filter.branch)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     case 'university':
                         validation = new Validator(body, book_filter.book_university, errmsg.book_filter.university)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     case 'sem':
                         validation = new Validator(body, book_filter.book_sem, errmsg.book_filter.sem)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     case 'edition':
                         validation = new Validator(body, book_filter.book_edition, errmsg.book_filter.collage)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     case 'author':
                         validation = new Validator(body, book_filter.book_author, errmsg.book_filter.author)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     default : validation_result ={status:false,message:"Invalid choice passed,please pass valid choice"};
                     break;
@@ -375,19 +375,19 @@ const validatedata = async (body, option,res) => {
                 switch(body.choice){
                     case 'add':
                         validation = new Validator(body, feedback.add, errmsg.feedback.add)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     case 'delete':
                         validation = new Validator(body, feedback.delete, errmsg.feedback.delete)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     case 'update':
                         validation = new Validator(body, feedback.update, errmsg.feedback.update)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     case 'fetch':
                         validation = new Validator(body, feedback.fetch, errmsg.feedback.fetch)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     default : validation_result ={status:false,message:"Invalid choice passed,please pass valid choice "};
                     break;
@@ -398,35 +398,35 @@ const validatedata = async (body, option,res) => {
                         break;
                     case 'title':
                         validation = new Validator(body, Seller_filter.name, errmsg.Seller_filter.name)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     case 'id':
                         validation = new Validator(body, Seller_filter.id, errmsg.Seller_filter.id)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                     break;
                     case 'bookid':
                         validation = new Validator(body, Seller_filter.book_id, errmsg.Seller_filter.bookid)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     case 'bookname':
                         validation = new Validator(body, Seller_filter.book_title, errmsg.Seller_filter.booktitle)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     case 'university':
                         validation = new Validator(body, Seller_filter.book_university, errmsg.Seller_filter.university)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     case 'sem':
                         validation = new Validator(body, Seller_filter.book_sem, errmsg.Seller_filter.sem)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     case 'collage':
                         validation = new Validator(body, Seller_filter.book_collage, errmsg.Seller_filter.collage)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     case 'author':
                         validation = new Validator(body, Seller_filter.book_author, errmsg.Seller_filter.author)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     default : validation_result ={status:false,message:"Invalid choice passed,please pass valid choice"};
                     break;
@@ -435,23 +435,23 @@ const validatedata = async (body, option,res) => {
                 switch(body.choice){
                     case 'buyer_id':
                         validation = new Validator(body, Order_filter.buyer_id, errmsg.Seller_filter.name)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     case 'book_id':
                         validation = new Validator(body, Order_filter.book_id, errmsg.Seller_filter.id)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                     break;
                     case 'book_price':
                         validation = new Validator(body, Order_filter.book_price, errmsg.Seller_filter.bookid)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     case 'seller_id':
                         validation = new Validator(body, Order_filter.seller_id, errmsg.Seller_filter.booktitle)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     case 'order_id':
                         validation = new Validator(body, Order_filter.order_id, errmsg.Seller_filter.university)
-                        validation_result = validation.fails() ? { status: false, message: 'Book_visit Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
                     default : validation_result ={status:false,message:"Invalid choice passed,please pass valid choice"};
                         break;

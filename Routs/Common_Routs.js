@@ -1,9 +1,11 @@
 const express = require('express');
 const router = express.Router();
 const validationschema = require('../Validations/Validations');
+const common_validationschema = require('../Validations/Common_Validation');
 const Notification_Controllers = require('../Controllers/NotificationController')
 const Feedback_Controllers = require('../Controllers/FeedBackController')
 const handleError= require('../Errors/errors');
+const helpers=require('../helpers/helpers');
 
 router.post('/Notification', async (req, res) => {
     try {
@@ -12,7 +14,7 @@ router.post('/Notification', async (req, res) => {
             let result;
             switch(req.body.choice){
                 case 'sms':
-                    validation_result = await validationschema.validatedata(req.body, 'notification')
+                    validation_result = await common_validationschema.validatedata(req.body, 'notification')
                     if (validation_result.status) {
                         result = await Notification_Controllers.Sms_notification(req.body,res);
                         res.json(result);
@@ -20,7 +22,7 @@ router.post('/Notification', async (req, res) => {
                         res.json(validation_result);
                     break;
                 case 'email':
-                    validation_result = await validationschema.validatedata(req.body, 'notification')
+                    validation_result = await common_validationschema.validatedata(req.body, 'notification')
                     if (validation_result.status) {
                         result = await Notification_Controllers.Email_notification(req.body,res);
                         res.json(result);
@@ -28,7 +30,7 @@ router.post('/Notification', async (req, res) => {
                         res.json(validation_result);
                     break;
                 case 'firebase':
-                    validation_result = await validationschema.validatedata(req.body, 'notification')
+                    validation_result = await common_validationschema.validatedata(req.body, 'notification')
                     if (validation_result.status) {
                         result = await Notification_Controllers.Firebase_notification(req.body,res);
                         res.json(result);
@@ -36,7 +38,7 @@ router.post('/Notification', async (req, res) => {
                         res.json(validation_result);
                     break;
                 case 'desktop':
-                    validation_result = await validationschema.validatedata(req.body, 'notification')
+                    validation_result = await common_validationschema.validatedata(req.body, 'notification')
                     if (validation_result.status) {
                         result = await Notification_Controllers.Desktop_notification(req.body,res);
                         res.json(result);
@@ -60,7 +62,7 @@ router.post('/Submit_feedback', async (req, res) => {
             let result;
             switch(req.body.choice){
                 case 'add':
-                    validation_result = await validationschema.validatedata(req.body, 'submit_feedback')
+                    validation_result = await common_validationschema.validatedata(req.body, 'submit_feedback')
                     if (validation_result.status) {
                         result = await Feedback_Controllers.Feedback_Operations(req.body,res);
                         res.json(result);
@@ -68,7 +70,7 @@ router.post('/Submit_feedback', async (req, res) => {
                         res.json(validation_result);
                     break;
                 case 'delete':
-                    validation_result = await validationschema.validatedata(req.body, 'submit_feedback')
+                    validation_result = await common_validationschema.validatedata(req.body, 'submit_feedback')
                     if (validation_result.status) {
                         result = await Feedback_Controllers.Feedback_Operations(req.body,res);
                         res.json(result);
@@ -76,7 +78,7 @@ router.post('/Submit_feedback', async (req, res) => {
                         res.json(validation_result);
                     break;
                 case 'update':
-                    validation_result = await validationschema.validatedata(req.body, 'submit_feedback')
+                    validation_result = await common_validationschema.validatedata(req.body, 'submit_feedback')
                     if (validation_result.status) {
                         result = await Feedback_Controllers.Feedback_Operations(req.body,res);
                         res.json(result);
@@ -84,7 +86,7 @@ router.post('/Submit_feedback', async (req, res) => {
                         res.json(validation_result);
                     break;
                 case 'fetch':
-                    validation_result = await validationschema.validatedata(req.body, 'submit_feedback')
+                    validation_result = await common_validationschema.validatedata(req.body, 'submit_feedback')
                     if (validation_result.status) {
                         result = await Feedback_Controllers.Feedback_Filter(req.body,res);
                         res.json(result);
@@ -102,5 +104,6 @@ router.post('/Submit_feedback', async (req, res) => {
 })
 
 //router.use(validationschema.handle_ValidationError)
+router.use(helpers.handle_ValidationError)
 
 module.exports = router;

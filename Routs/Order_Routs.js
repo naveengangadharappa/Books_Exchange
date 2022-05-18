@@ -4,7 +4,7 @@ const validationschema = require('../Validations/Validations');
 const Order_Controllers = require('../Controllers/OrderController');
 const Seller_Controllers = require('../Controllers/SellerController');
 const handleError= require('../Errors/errors');
-
+const helpers=require('../helpers/helpers');
 
 router.post('/Order_Operations', async (req, res) => {
     try {
@@ -88,6 +88,7 @@ router.post('/Seller_Filter', async (req, res) => {
     }     
 })
 
-router.use(validationschema.handle_ValidationError)
+//router.use(validationschema.handle_ValidationError)
+router.use(helpers.handle_ValidationError)
 
 module.exports = router;

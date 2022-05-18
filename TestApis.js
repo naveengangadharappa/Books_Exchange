@@ -33,6 +33,7 @@ const instance = autocannon({
 }, console.log)
 
 autocannon.track(instance);
+
 // // async/await
 // async function foo () {
 //   const result = await autocannon({

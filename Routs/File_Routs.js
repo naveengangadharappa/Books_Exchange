@@ -4,6 +4,7 @@ const validationschema = require('../Validations/Validations');
 const handleError= require('../Errors/errors');
 const multer = require('multer');
 const path = require('path');   
+const helpers=require('../helpers/helpers');
 
 let storage = multer.diskStorage({
     destination:'assets/',
@@ -79,6 +80,8 @@ router.post('/upload_files',arrUpload,(req,res)=>{
     }
 })
 
-router.use(validationschema.handle_ValidationError)
+//router.use(validationschema.handle_ValidationError)
+
+router.use(helpers.handle_ValidationError)
 
 module.exports = router;

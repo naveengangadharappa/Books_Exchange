@@ -146,4 +146,20 @@ let emailfunc = function (params) {
     });
 }
 
-module.exports={emailfunc,GenerateJWTToken,verifiyJWTToken,generate_id,salt,hashpassword,comparepassword,mysqldatetime,get_currentDateTime}
+const handle_ValidationError=(err, req, res, next) => {
+    try {
+        if (err instanceof ValidationError) {
+            // At this point you can execute your error handling code
+            res.json({ status: false,error_status:false,message: "Invalid Request", err: ValidationError });
+            //res.status(400).send('invalid');
+            next();
+        }
+        else next(err); // pass error on if not a validation error
+    } catch(error){
+        if(req.url=='/upload_file' || req.url=='/upload_files') 
+            res.json({status:false,error_status:false,message:"Invalid Request",err:[{file:["file field required"]}]});
+        else res.json({status:false,message:"Invalid Request"});
+    }
+}
+
+module.exports={handle_ValidationError,emailfunc,GenerateJWTToken,verifiyJWTToken,generate_id,salt,hashpassword,comparepassword,mysqldatetime,get_currentDateTime}
