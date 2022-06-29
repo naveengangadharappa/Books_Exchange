@@ -37,7 +37,7 @@ const Feedback_Filter = async (req_data,res) => {
 const Feedback_Operations = async (req_data) => {
     try {
         let params = {
-            option: 'fetchdata',
+            option: '',
             sql: ``,
             data: []
         }

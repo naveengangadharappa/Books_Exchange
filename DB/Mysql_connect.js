@@ -16,13 +16,13 @@ const mysql = require('mysql2');
 const dotenv = require('dotenv');
 dotenv.config();
 
-const mysqlconnection = mysql.createConnection({
-    host: process.env.MYSQL_HOST || 'localhost',
-    port:3306,
-    user: process.env.MYSQL_USERNAME || 'root',
-    password: process.env.MYSQL_PASSWORD || '1BI16cs413',
-    database: process.env.MYSQL_DBNAME || 'naveenbooks'
-  });
+// const mysqlconnection = mysql.createConnection({
+//     host: process.env.MYSQL_HOST || 'localhost',
+//     port:3306,
+//     user: process.env.MYSQL_USERNAME || 'root',
+//     password: process.env.MYSQL_PASSWORD || '1BI16cs413',
+//     database: process.env.MYSQL_DBNAME || 'naveenbooks'
+//   });
 
 const mysqlpool = mysql.createPool({
     host:process.env.MYSQL_HOST, 

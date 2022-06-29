@@ -49,6 +49,10 @@ const feedback = {
     }
 };
 
+const all_validation = {
+    Notification,
+    feedback
+}
 const validatedata = async (body, option,res) => {
     try {
         let validation;
@@ -109,7 +113,7 @@ const validatedata = async (body, option,res) => {
     }
 }
 
-module.exports = { validatedata}
+module.exports = { validatedata,all_validation}
 
 //module.exports = { validatedata, handle_ValidationError }
 

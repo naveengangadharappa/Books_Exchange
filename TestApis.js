@@ -5,7 +5,7 @@ const autocannon = require('autocannon')
 
 const instance = autocannon({
   url: 'http://localhost:3000',
-  connections: 1000, //default 10                 //4000 98-291 timeouts 3500 94-110 timeout     8k requests in 10.88s, 4.55 MB read
+  connections: 4000, //default 10                 //4000 98-291 timeouts 3500 94-110 timeout     8k requests in 10.88s, 4.55 MB read
                                                 //405 errors (175 timeouts)
     //with cluster instances we can easily reach 5000 connections with 1 pipeline
   pipelining: 1, // default

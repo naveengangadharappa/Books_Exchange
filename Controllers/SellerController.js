@@ -13,19 +13,19 @@ const Seller_Filter = async (req_data,res) => {
         let filter = req_data.choice ? req_data.choice : '';
         switch (filter) {
             case "seller_id":
-                params.sql = `select * from uploader where seller_id=?`;
+                params.sql = `select * from orders where seller_id=?`;
                 params.data = [req_data.seller_id];
                 break;
             case "book_id":
-                params.sql = `select * from uploader where book_id=?`;
+                params.sql = `select * from orders where book_id=?`;
                 params.data = [req_data.book_id];
                 break;
             case "order_id":
-                params.sql = `select * from uploader where id=?`;
+                params.sql = `select * from orders where id=?`;
                 params.data = [req_data.id];
                 break;
             case "bookprice":
-                params.sql = `select * from uploader where book_price like '%${req_data.title}%'`;
+                params.sql = `select * from orders where book_price like '%${req_data.title}%'`;
                 params.data = [req_data.title];
                 break;
             
@@ -42,7 +42,7 @@ const Seller_Filter = async (req_data,res) => {
 const Seller_Operations = async (req_data) => {
     try {
         let params = {
-            option: 'fetchdata',
+            option: '',
             sql: ``,
             data: []
         }

@@ -1,119 +1,89 @@
 {
 	"log": [
 		{
-			"DateTime": "Date: 2021-3-27 Time:  20 : 3 : 23",
+			"DateTime": "Date: 2022-4-30 Time:  9 : 30 : 22",
 			"UserId": "myId",
-			"Errormsg": "ReferenceError: id is not defined"
+			"Errormsg": "Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',Ip_Address='123.123.34.2',modified_time='2022-05-30 09:30:22' where stu_id='1BI' at line 1"
 		},
 		{
-			"DateTime": "Date: 2021-3-28 Time:  2 : 10 : 34",
+			"DateTime": "Date: 2022-4-30 Time:  9 : 30 : 27",
 			"UserId": "myId",
-			"Errormsg": "TypeError: available_realtor[0] is not iterable"
+			"Errormsg": "Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',Ip_Address='123.123.34.2',modified_time='2022-05-30 09:30:27' where stu_id='1BI' at line 1"
 		},
 		{
-			"DateTime": "Date: 2022-3-5 Time:  2 : 21 : 23",
+			"DateTime": "Date: 2022-4-30 Time:  10 : 28 : 53",
 			"UserId": "myId",
-			"Errormsg": "Error: Access denied for user ''@'localhost' (using password: YES)"
+			"Errormsg": "Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',Ip_Address='123.123',modified_time='2022-05-30 10:28:53' where stu_id='1BI16cs4' at line 1"
 		},
 		{
-			"DateTime": "Date: 2022-3-9 Time:  15 : 43 : 17",
+			"DateTime": "Date: 2022-4-30 Time:  10 : 35 : 0",
 			"UserId": "myId",
-			"Errormsg": "Error: Unknown column 'stu_password' in 'field list'"
+			"Errormsg": "Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',Ip_Address='123.123',modified_time='2022-05-30 10:35:00' where stu_id='1BI16cs4' at line 1"
 		},
 		{
-			"DateTime": "Date: 2022-3-9 Time:  15 : 43 : 35",
-			"UserId": "myId",
-			"Errormsg": "Error: Unknown column 'stu_password' in 'field list'"
-		},
-		{
-			"DateTime": "Date: 2022-3-9 Time:  15 : 52 : 1",
-			"UserId": "myId",
-			"Errormsg": "Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',Ip_Address='192.193.98.29',modified_time='2022-04-09 15:52:01' where stu_id='1B' at line 1"
-		},
-		{
-			"DateTime": "Date: 2022-3-17 Time:  13 : 49 : 41",
+			"DateTime": "Date: 2022-4-30 Time:  11 : 49 : 9",
 			"UserId": "latest",
-			"Errormsg": "TypeError: Cannot read properties of undefined (reading 'data')"
+			"Errormsg": "ReferenceError: Res_data is not defined"
 		},
 		{
-			"DateTime": "Date: 2022-3-17 Time:  13 : 52 : 58",
-			"UserId": "latest",
-			"Errormsg": "TypeError: Cannot read properties of undefined (reading 'data')"
-		},
-		{
-			"DateTime": "Date: 2022-3-17 Time:  13 : 55 : 25",
-			"UserId": "latest",
-			"Errormsg": "ReferenceError: toemail is not defined"
-		},
-		{
-			"DateTime": "Date: 2022-3-17 Time:  13 : 58 : 41",
-			"UserId": "latest",
-			"Errormsg": "ReferenceError: toemail is not defined"
-		},
-		{
-			"DateTime": "Date: 2022-3-17 Time:  13 : 59 : 1",
-			"UserId": "latest",
-			"Errormsg": "ReferenceError: toemail is not defined"
-		},
-		{
-			"DateTime": "Date: 2022-3-17 Time:  14 : 3 : 2",
-			"UserId": "latest",
-			"Errormsg": "ReferenceError: transporter is not defined"
-		},
-		{
-			"DateTime": "Date: 2022-3-17 Time:  14 : 7 : 30",
+			"DateTime": "Date: 2022-4-30 Time:  11 : 58 : 39",
 			"UserId": "myId",
-			"Errormsg": "Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from,to,stu_id) values(1650530864929,'email','gnaveenkumar18.ng@gmail.com',NULL,' at line 1"
+			"Errormsg": "Error: Column count doesn't match value count at row 1"
 		},
 		{
-			"DateTime": "Date: 2022-3-17 Time:  14 : 10 : 58",
+			"DateTime": "Date: 2022-4-30 Time:  12 : 1 : 11",
 			"UserId": "myId",
-			"Errormsg": "Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from,to,stu_id) values(1651318790567,'email','booksdealingsystem@gmail.com','gna' at line 1"
+			"Errormsg": "Error: Duplicate entry '9876543211' for key 'student.s_phone_UNIQUE'"
 		},
 		{
-			"DateTime": "Date: 2022-3-17 Time:  14 : 12 : 33",
+			"DateTime": "Date: 2022-4-30 Time:  12 : 3 : 47",
 			"UserId": "myId",
-			"Errormsg": "Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from,to,stu_id) values(1650630944091,'email','booksdealingsystem@gmail.com','gna' at line 1"
+			"Errormsg": "Error: Unknown column 'token' in 'field list'"
 		},
 		{
-			"DateTime": "Date: 2022-3-17 Time:  14 : 14 : 53",
+			"DateTime": "Date: 2022-4-31 Time:  3 : 15 : 37",
 			"UserId": "myId",
-			"Errormsg": "Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from,to,stu_id) values(1650192630027,'email','booksdealingsystem@gmail.com','gna' at line 1"
+			"Errormsg": "Error: Unknown column 'b_id' in 'where clause'"
 		},
 		{
-			"DateTime": "Date: 2022-3-17 Time:  14 : 18 : 10",
+			"DateTime": "Date: 2022-4-31 Time:  3 : 27 : 23",
 			"UserId": "myId",
-			"Errormsg": "Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from,to,stu_id) values('1650325995212','email','booksdealingsystem@gmail.com','g' at line 1"
+			"Errormsg": "Error: Duplicate entry '1654397929302' for key 'bookpicture.PRIMARY'"
 		},
 		{
-			"DateTime": "Date: 2022-3-17 Time:  14 : 31 : 32",
+			"DateTime": "Date: 2022-4-31 Time:  11 : 51 : 34",
 			"UserId": "myId",
-			"Errormsg": "Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''type','from','to',stu_id) values('1651062495424','email','booksdealingsystem@gm' at line 1"
+			"Errormsg": "Error: Data too long for column 'MapLink' at row 1"
 		},
 		{
-			"DateTime": "Date: 2022-3-17 Time:  14 : 38 : 48",
+			"DateTime": "Date: 2022-4-31 Time:  12 : 44 : 24",
 			"UserId": "myId",
-			"Errormsg": "Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''id','type','from','to','stu_id') values ('1650417942740','email','booksdealings' at line 1"
+			"Errormsg": "Error: Column 'bid' cannot be null"
 		},
 		{
-			"DateTime": "Date: 2022-3-17 Time:  14 : 39 : 22",
+			"DateTime": "Date: 2022-4-31 Time:  12 : 50 : 38",
 			"UserId": "myId",
-			"Errormsg": "Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from,to,stu_id) values ('1650825657230','email','booksdealingsystem@gmail.com','' at line 1"
+			"Errormsg": "Error: Data too long for column 'pic_id' at row 1"
 		},
 		{
-			"DateTime": "Date: 2022-3-17 Time:  14 : 52 : 30",
-			"UserId": "latest",
-			"Errormsg": "TypeError: Cannot read properties of undefined (reading 's_email')"
-		},
-		{
-			"DateTime": "Date: 2022-4-4 Time:  23 : 19 : 48",
+			"DateTime": "Date: 2022-4-31 Time:  12 : 51 : 34",
 			"UserId": "myId",
-			"Errormsg": "Error: Table 'naveenbooks.books' doesn't exist"
+			"Errormsg": "Error: Duplicate entry '1649098419810-Screenshot 2022-03-09 at 11.25.31 PM.png' for key 'picture.Primary_key'"
 		},
 		{
-			"DateTime": "Date: 2022-4-4 Time:  23 : 48 : 31",
+			"DateTime": "Date: 2022-5-1 Time:  22 : 23 : 57",
 			"UserId": "myId",
-			"Errormsg": "Error: Unknown column 'b_collage' in 'where clause'"
+			"Errormsg": "Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where order_id=' at line 1"
+		},
+		{
+			"DateTime": "Date: 2022-5-1 Time:  22 : 25 : 21",
+			"UserId": "myId",
+			"Errormsg": "Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where order_id='1654565649941'' at line 1"
+		},
+		{
+			"DateTime": "Date: 2022-5-9 Time:  23 : 58 : 47",
+			"UserId": "myId",
+			"Errormsg": "Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LEFT JOIN bookpicture bp ON b.b_id=bp.bid' at line 1"
 		}
 	]
 }

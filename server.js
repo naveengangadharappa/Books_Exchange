@@ -12,6 +12,7 @@ const order_routs = require('./Routs/Order_Routs');
 const book_routs = require('./Routs/Book_Routs');
 const dotenv = require('dotenv');
 const morgan = require('morgan');
+const session = require('express-session');
 dotenv.config();
 
 const handleError = require('./Errors/errors');
@@ -64,6 +65,13 @@ app.use(async(err,req,res,next)=>{
         res.json({ status: false, message: "Required Verification Token in header" });
 })
 
+//app.use(session({ secret: 'Bkssshhhhh123@BX' }));
+app.use(session({
+    secret: 'Bessshhhhh123@BX',
+    resave: false,
+    saveUninitialized: true,
+    cookie: { secure: true }
+}))
 
 app.use('/BookExchange', auth_routs);
 app.use('/BookExchange', file_routs);

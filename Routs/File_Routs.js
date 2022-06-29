@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const validationschema = require('../Validations/Validations');
+//const validationschema = require('../Validations/Validations');
+const Urls=require('../Constants/Urls');
 const handleError= require('../Errors/errors');
 const multer = require('multer');
 const path = require('path');   
@@ -34,9 +35,8 @@ router.get('/', (req, res) => {
     //res.send( "A - Connected to Node Api server for Books Exchange. ".repeat(1000))
 })
 
-router.get('/get_file/:filename',(req,res)=>{
+router.get(Urls.File_Routs.get_file_,(req,res)=>{
     try{
-        console.log("file name params = ",req.params.filename)
         if(req.params.filename) 
             res.download(path.join('./assets',req.params.filename),req.params.filename);
         else res.json({status:false,Message:'Invalid File Name'});
@@ -45,9 +45,8 @@ router.get('/get_file/:filename',(req,res)=>{
     }  
 })
 
-router.post('/get_file',(req,res)=>{
+router.post(Urls.File_Routs.get_file,(req,res)=>{
     try{
-        console.log("post get file entered");
         if(req.body.filename)
             res.download(path.join('./assets',req.body.filename),req.body.filename);
         else res.json({status:false,Message:'Invalid File Name'});
@@ -57,7 +56,7 @@ router.post('/get_file',(req,res)=>{
     }  
 })
 
-router.post('/upload_file',upload1,(req,res)=>{
+router.post(Urls.File_Routs.upload_file,upload1,(req,res)=>{
     try{
         if(req.file)
             res.json({status:true,file_details:req.file,Message:"File upload Successfull"});
@@ -69,7 +68,7 @@ router.post('/upload_file',upload1,(req,res)=>{
    
 })
 
-router.post('/upload_files',arrUpload,(req,res)=>{
+router.post(Urls.File_Routs.upload_files,arrUpload,(req,res)=>{
     try{
         if(req.files.length>0)
             res.json({status:true,file_details:req.files,Message:"Files upload Successfull"})

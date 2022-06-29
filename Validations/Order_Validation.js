@@ -4,49 +4,52 @@ const handleError= require('../Errors/errors');
 
 const Order_Operations = {
     add:{
-        buyer_id: 'required',
+        buyer_id: 'required|alpha_num|between:9,12',
         book_id: 'required',
-        book_price:'required|alpha_num|between:1,6',
-        seller_id:'required',
+        book_price:'required|numeric|digits_between:1,5',
+        seller_id:'required|alpha_num|between:9,12',
     },
     delete:{
         order_id: 'required',
     },
     update:{
-        buyer_id: 'required',
+        buyer_id: 'required|alpha_num|between:9,12',
         book_id: 'required',
         order_id: 'required',
-        book_price:'required|alpha_num|between:1,6',
-        seller_id:'required',
+        book_price:'required|numeric|digits_between:0,1',
+        seller_id:'required|alpha_num|between:9,12',
     },
     fetch:{
         order_id: '',
         buyer_id: '',
         book_id: '',
-        book_price:'alpha_num|between:1,6',
+        book_price:'numeric|digits_between:0,1',
         seller_id:'',
     }
 };
 
 const Order_filter = {
     order_id:{
-        stu_id:'required|alpha_num|between:9,12',
+        order_id:'required|alpha_num|between:9,12',
     },
     book_id:{
         book_id: 'required|between:2,100',
     },
     seller_id:{
-        book_name: 'required|alpha_dash|between:2,100',
-       
+        seller_id: 'required|alpha_dash|digits_between:9,12',  
     },
     buyer_id:{
-        book_author:'required|alpha_dash|between:2,100',
-       
+        buyer_id:'required|alpha_dash|between:9,12', 
     },
     book_price:{
-        book_university:'required|alpha_dash|between:2,100',
+        book_price:'required|numeric|digits_between:1,12',
     }   
 };
+
+const all_validation = {
+    Order_Operations,
+    Order_filter
+}
 
 const validatedata = async (body, option,res) => {
     try {
@@ -81,11 +84,12 @@ const validatedata = async (body, option,res) => {
                     case 'buyer_id':
                         validation = new Validator(body, Order_filter.buyer_id, errmsg.Seller_filter.name)
                         validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        console.log(validation_result);
                         break;
                     case 'book_id':
                         validation = new Validator(body, Order_filter.book_id, errmsg.Seller_filter.id)
                         validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
-                    break;
+                        break;
                     case 'book_price':
                         validation = new Validator(body, Order_filter.book_price, errmsg.Seller_filter.bookid)
                         validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
@@ -93,15 +97,18 @@ const validatedata = async (body, option,res) => {
                     case 'seller_id':
                         validation = new Validator(body, Order_filter.seller_id, errmsg.Seller_filter.booktitle)
                         validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
+                        console.log(validation_result);
                         break;
                     case 'order_id':
                         validation = new Validator(body, Order_filter.order_id, errmsg.Seller_filter.university)
                         validation_result = validation.fails() ? { status: false, message: 'Validation Unsuccessfull', validation: validation.errors.errors } : { status: true };
                         break;
-                    default : validation_result ={status:false,message:"Invalid choice passed,please pass valid choice"};
+                    default : validation_result={status:true}
                         break;
                 }
+                break;
             default: validation_result = { status: false, message: "option cannot be identified" };
+            break;
         }
         return validation_result;
     } catch (err) {
@@ -112,7 +119,7 @@ const validatedata = async (body, option,res) => {
     }
 }
 
-module.exports = { validatedata }
+module.exports = { validatedata,all_validation }
 
 //module.exports = { validatedata, handle_ValidationError }
 

@@ -8,8 +8,8 @@ let nodemailer = require('nodemailer');
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'booksdealingsystem@gmail.com',
-        pass: '1BI16cs413'
+        user: process.env.From_MailID,
+        pass: process.env.Mail_pswd,
     }
 });
 
@@ -76,7 +76,7 @@ const comparepassword = (rawpassword, hashpswd) => {
             if (err) {
                 resolve({ status: false, message: data.failuremessage })
             } else {
-                console.log("passowrd match");
+                //console.log("passowrd match",result);
                 resolve({ status: true, passwordmatch: result })
             }
         });
