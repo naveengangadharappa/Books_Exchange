@@ -8,7 +8,8 @@
     "test_server_load": "node TestApis",
     "start": "nodemon server.js",
     "start_cluster": "nodemon server_cluster.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "generate-swagger": "node -r dotenv/config ./swaggerConfig.js > swagger.json"
   },
   "repository": {
     "type": "git",
@@ -34,6 +35,8 @@
     "nodemailer": "^6.7.3",
     "nodemon": "^2.0.16",
     "path": "^0.12.7",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0",
     "update-json-file": "^1.1.1",
     "validatorjs": "^3.22.1"
   },

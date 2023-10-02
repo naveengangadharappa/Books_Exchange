@@ -7,7 +7,30 @@ const Feedback_Controllers = require('../Controllers/FeedBackController');
 const handleError= require('../Errors/errors');
 const helpers=require('../helpers/helpers');
 
-
+/**
+   * @swagger
+   * /Get_AllRout_Params:
+   *   get:
+   *     description: Get all validation and requestion parameters for all routes
+   *     requestBody:
+   *       content:
+   *         application/json:
+   *           schema:
+   *             $ref: '#/components/schemas/Students'
+   *     responses:
+   *       200:
+   *         description: Get_AllRout_Params Service Response
+   *         content:
+   *            application/json:
+   *                schema:
+   *                    type: object
+   *            properties:
+   *                message:
+   *                    type: string
+   *                status:
+   *                    type: boolean
+   *                
+*/
 
 //router.post('/Notification', async (req, res) => {
 router.post(Urls.Common_Routs.Notification, async (req, res) => {

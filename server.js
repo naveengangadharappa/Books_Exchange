@@ -17,6 +17,8 @@ dotenv.config();
 
 const handleError = require('./Errors/errors');
 const helpers=require('./helpers/helpers');
+const swaggerUi = require('swagger-ui-express');
+const swaggerSpec = require('./swaggerConfig'); 
 
 const app = express();
 app.use(bodyparser.json());
@@ -79,10 +81,13 @@ app.use('/BookExchange', order_routs);
 app.use('/BookExchange', common_routs);
 app.use('/BookExchange', book_routs);
 
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+
 
 app.use('*', (req, res) => {
     handleError(res,{},'Page not found', 404, false,'./Logs/Server_Error_Logs.json');
 });
+
 
 process.on('uncaughtException', err => {             //when ever uncaught excdeption / error log error, send Admin alert
     //handleError(null,err,err.message, 500, false,'./Logs/Server_Error_Logs.json');

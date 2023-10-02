@@ -7,6 +7,30 @@ const Auth_Controllers = require('../Controllers/AuthController');
 const handleError= require('../Errors/errors');
 const helpers=require('../helpers/helpers');
 
+/**
+   * @swagger
+   * /login:
+   *   post:
+   *     description: Login Service to the BooKExchange 
+   *     requestBody:
+   *       content:
+   *         application/json:
+   *           schema:
+   *             $ref: '#/components/schemas/Students'
+   *     responses:
+   *       200:
+   *         description: login Service Response
+   *         content:
+   *            application/json:
+   *                schema:
+   *                    type: object
+   *            properties:
+   *                message:
+   *                    type: string
+   *                status:
+   *                    type: boolean
+*/
+
 router.post(Urls.Auth.Login, async (req, res) => {
     try {
         let validation_result;
